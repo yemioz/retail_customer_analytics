@@ -113,12 +113,12 @@ This sits on top of separate `first_purchase`, `user_activity`, and cohort-offse
 
 ## Bayesian Customer Behavior Analysis
 
-For transaction $i$, promotion usage is represented by $T_i \in \{0,1\}$. The analysis estimates the promotion-group coefficient $\tau$ for two outcomes.
+For transaction $i$, promotion usage is represented by $T_i \in \lbrace 0,1 \rbrace$. The analysis estimates the promotion-group coefficient $\tau$ for two outcomes.
 
 A small piece of the model specification shows how the business effect is connected to the likelihood. For the selected Gamma model,
 
 $$
-Y_i \sim \operatorname{Gamma}(\mu_i,\sigma),
+Y_i \sim \text{Gamma}(\mu_i,\sigma),
 \qquad
 \log(\mu_i)=\alpha+\tau T_i.
 $$
@@ -144,7 +144,7 @@ The Gamma model is retained because it better represents the upper tail while gi
 
 ### Basket size
 
-Basket size is observed on the discrete support $\{1,\ldots,9\}$. The final model therefore uses a zero- and upper-truncated Poisson likelihood rather than allowing impossible zero-item or very large baskets.
+Basket size is observed on the discrete support $\lbrace 1,\ldots,9 \rbrace$. The final model therefore uses a zero- and upper-truncated Poisson likelihood rather than allowing impossible zero-item or very large baskets.
 
 For the truncated count model, the notebook calculates the expected basket size from the truncated distribution directly instead of treating $e^\tau$ as the observed mean ratio.
 
