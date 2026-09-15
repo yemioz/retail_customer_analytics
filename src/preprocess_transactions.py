@@ -1,4 +1,4 @@
-"""Clean monthly transaction CSV files before PostgreSQL ingestion."""
+# Clean monthly transaction CSV files before PostgreSQL ingestion
 
 from pathlib import Path
 import pandas as pd
@@ -12,7 +12,7 @@ def clean_transaction_files(
     input_dir: Path = INPUT_DIR,
     output_dir: Path = OUTPUT_DIR,
 ) -> None:
-    """Convert nullable ID columns and save cleaned monthly transaction files."""
+    # Convert nullable ID columns and save cleaned monthly transaction files
 
     if not input_dir.exists():
         raise FileNotFoundError(f"Input directory not found: {input_dir}")
