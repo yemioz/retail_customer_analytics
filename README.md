@@ -16,6 +16,10 @@ The workflow begins with raw monthly CSV files, cleans transaction identifiers i
 
 This is an observational analysis. Promotion assignment was not randomized, so the Bayesian results describe **associations**, not causal promotional lift.
 
+## Power BI Dashboard
+
+![Retail Customer Analytics dashboard](dashboard/screenshots/base_view.png)
+
 ## Dataset at a glance
 
 - **14,623,691** transactions across **17** modeling fields
@@ -210,6 +214,9 @@ Large source and generated CSV files are intentionally not included in the repos
 
 ```text
 retail_customer_analytics/
+├── dashboard/
+│   ├── base_view.png
+│   └── filter_view.png
 ├── data/
 │   ├── raw/
 │   │   ├── transactions/
