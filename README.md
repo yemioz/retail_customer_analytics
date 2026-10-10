@@ -18,7 +18,7 @@ This is an observational analysis. Promotion assignment was not randomized, so t
 
 ## Power BI Dashboard
 
-![Retail Customer Analytics dashboard](dashboard/screenshots/base_view.png)
+![Retail Customer Analytics dashboard](dashboard/base_view.png)
 
 ## Dataset at a glance
 
